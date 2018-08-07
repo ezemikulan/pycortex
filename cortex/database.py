@@ -436,7 +436,7 @@ class Database(object):
         
         if type == 'fiducial' and 'fiducial' not in files:
             wpts, polys = self.get_surf(subject, 'wm', hemi)
-            ppts, _     = self.get_surf(subject, 'pia', hemi)
+            ppts, _     = self.get_surf(subject, 'pial', hemi)
             return (wpts + ppts) / 2, polys
 
         try:
